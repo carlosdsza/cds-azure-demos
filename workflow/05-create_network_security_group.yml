@@ -13,24 +13,30 @@
             protocol: Tcp
             destination_port_range: 22
             access: Allow
-            priority: 1001
+            priority: 1010
+            direction: Inbound
+          - name: HTTP
+            protocol: Tcp
+            destination_port_range: 80
+            access: Allow
+            priority: 1011
             direction: Inbound
           - name: RDP
             protocol: Tcp
             destination_port_range: 3389
             access: Allow
-            priority: 1002
+            priority: 1012
             direction: Inbound
           - name: WINRM
             protocol: Tcp
             destination_port_range: 5986
             access: Allow
-            priority: 1004
+            priority: 1013
             direction: Inbound
           - name: https-iis
             protocol: Tcp
             destination_port_range: 8080-8081
             access: Allow
-            priority: 1005
+            priority: 1014
             direction: Inbound
 
