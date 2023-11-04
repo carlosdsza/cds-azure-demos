@@ -81,18 +81,6 @@
             access: Allow
             priority: 1003
             direction: Inbound
-          - name: winrm
-            protocol: Tcp
-            destination_port_range: 5986
-            access: Allow
-            priority: 1004
-            direction: Inbound
-          - name: https-iis
-            protocol: Tcp
-            destination_port_range: 8080-8081
-            access: Allow
-            priority: 1004
-            direction: Inbound
 
     - name: Create virtual network interface card
       azure.azcollection.azure_rm_networkinterface:
