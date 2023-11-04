@@ -27,7 +27,7 @@
     # Added as per https://learn.microsoft.com/en-us/azure/developer/ansible/vm-configure-windows?tabs=ansible
     - name: Create VM script extension to enable HTTPS WinRM listener
       azure_rm_virtualmachineextension:
-        name: winrm-extension
+        name: winrm-wf-extension
         resource_group: "{{ resource_group_name }}"
         virtual_machine_name: "{{ win_vm_name }}"
         publisher: Microsoft.Compute
