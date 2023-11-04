@@ -21,4 +21,16 @@
             access: Allow
             priority: 1002
             direction: Inbound
+          - name: WINRM
+            protocol: Tcp
+            destination_port_range: 5986
+            access: Allow
+            priority: 1004
+            direction: Inbound
+          - name: https-iis
+            protocol: Tcp
+            destination_port_range: 8080-8081
+            access: Allow
+            priority: 1005
+            direction: Inbound
 
